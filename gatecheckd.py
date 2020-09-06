@@ -24,7 +24,9 @@
 import time
 import subprocess
 import re
-import board, busio, adafruit_vl53l0x
+import board
+import busio
+import adafruit_vl53l0x
 import sentry_sdk
 import requests
 
@@ -139,8 +141,8 @@ if __name__ == '__main__':
 	startupdata = getstartupmsg()
     for i in DBGRCPT:
         sendmsg(i, startupdata)
-    statecheck = [ False for i in range(CFSLOT) ]
-    rangecheck = [ 0 for i in range(CFSLOT) ]
+    statecheck = [False for i in range(CFSLOT)]
+    rangecheck = [0 for i in range(CFSLOT)]
     statecounter = 0
     while True:
         objrange = getrange()
