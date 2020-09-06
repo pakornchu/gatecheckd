@@ -70,7 +70,7 @@ LONGSTATECOUNT = 0
 def getstartupmsg():
     msg = '<b>Gatekeeper Daemon Started</b>\n'
     # Internal IP
-    cmd = ['ip','addr','show','wlan0']
+    cmd = ['ip', 'addr', 'show', 'wlan0']
     po = subprocess.Popen(cmd, stdout=subprocess.PIPE)
     po.wait()
     match = IPMATCH.search(po.stdout.read().decode('ascii'))
