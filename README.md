@@ -7,7 +7,7 @@ Sliding gate position check using VL53L0X sensor
 
 ## Software
 * Python 3
-* CircuitPython, adafruit-circuitpython-vl53l0x from PIP
+* requests, CircuitPython, adafruit-circuitpython-vl53l0x from PIP
 * i2c-tools for determining sensor address
 
 ## Other services
